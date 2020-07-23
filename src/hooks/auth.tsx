@@ -58,8 +58,8 @@ export const AuthProvider: React.FC = ({ children }) => {
   }, []);
 
   const signOut = useCallback(() => {
-    localStorage.removeItem('@GoBarber: token');
-    localStorage.removeItem('@GoBarber: user');
+    localStorage.removeItem('@GoBarber:token');
+    localStorage.removeItem('@GoBarber:user');
 
     setData({} as AuthState);
   }, []);
@@ -87,10 +87,6 @@ export const AuthProvider: React.FC = ({ children }) => {
 
 export function useAuth(): AuthContextData {
   const context = useContext(AuthContext);
-
-  if (!context) {
-    throw new Error('useAuth must be used within an AuthProvider');
-  }
 
   return context;
 }
