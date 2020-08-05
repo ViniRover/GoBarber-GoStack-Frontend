@@ -40,12 +40,12 @@ Obs: Para uma melhor experiência da aplicação, é recomendado a utilização 
  
    - Digite o seguinte comando:
    
-    Se tiver usando npm
-  ```
-    npm start
-  ```
-   Se tiver usando yarn
-  ```
-    yarn start
-    
-  ```
+     Se tiver usando npm
+    ```
+      npm start
+    ```
+     Se tiver usando yarn
+    ```
+      yarn start
+
+    ```
